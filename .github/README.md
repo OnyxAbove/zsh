@@ -16,6 +16,10 @@ git clone https://github.com/getantidote/zdotdir $ZDOTDIR
 [[ -f ~/.zshenv ]] && mv -f ~/.zshenv ~/.zshenv.bak
 ln -s $ZDOTDIR/.zshenv ~/.zshenv
 
+# symlink .zshrc
+[[ -f ~/.zshrc ]] && mv -f ~/.zshrc ~/.zshrc.bak
+ln -s $ZDOTDIR/.zshrc ~/.zshrc
+
 # start a new zsh session
 zsh
 ```
