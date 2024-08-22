@@ -106,7 +106,7 @@ $ZDOTDIR/.aliases
 ###
 
 # Use kind:fpath for prompts you want available to promptinit.
-romkatv/powerlevel10k #kind:fpath
+romkatv/powerlevel10k kind:fpath
 
 # Or, just load a prompt plugin the normal way.
 sindresorhus/pure kind:fpath
@@ -158,7 +158,7 @@ ohmyzsh/ohmyzsh path:plugins/extract
 ohmyzsh/ohmyzsh path:plugins/magic-enter
 ohmyzsh/ohmyzsh path:plugins/fancy-ctrl-z
 
-
+ohmyzsh/ohmyzsh path:themes/xiong-chiamiov-plus.zsh-theme
 ### Framework: Prezto
 #
 # Prezto is another popular Zsh framework. You might choose to use parts of it in your
