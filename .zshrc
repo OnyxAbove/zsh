@@ -29,7 +29,7 @@ source ${ZDOTDIR:-~}/.antidote/antidote.zsh
 antidote load
 
 # User Aliases
-alias dup='sudo zypper refresh && sudo zypper dup && flatpak update && nix-channel --update && nix-env --upgrade && brew update && brew upgrade'
+alias dup='sudo zypper refresh && sudo zypper dup && flatpak update && nix-channel --update && nix-env -u --always && brew update && brew upgrade'
 alias hyprlnano='nano ~/.config/hypr/hyprland.conf'
 alias vi='nvim'
 alias vim='nvim'
