@@ -29,7 +29,8 @@ source ${ZDOTDIR:-~}/.antidote/antidote.zsh
 antidote load
 
 # User Aliases
-alias dup='sudo zypper refresh && sudo zypper dup && flatpak update && nix-channel --update && nix-env -u --always && brew update && brew upgrade'
+#alias dup='sudo zypper refresh && sudo zypper dup && flatpak update && nix-channel --update && nix-env -u --always && brew update && brew upgrade'
+alias dup='sudo zypperoni refresh && sudo zypperoni --no-confirm dup && flatpak update && nix-channel --update && nix-env -u --a>'
 alias hyprlnano='nano ~/.config/hypr/hyprland.conf'
 alias vi='nvim'
 alias vim='nvim'
@@ -66,3 +67,5 @@ fi
 
 # Source your static plugins file.
 source ${zsh_plugins}.zsh
+
+export PATH=$PATH:/home/roshanstudley/.spicetify

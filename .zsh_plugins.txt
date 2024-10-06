@@ -227,6 +227,9 @@ belak/zsh-utils path:editor
 #zsh-users/zsh-syntax-highlighting kind:defer
 zdharma-continuum/fast-syntax-highlighting kind:defer
 
+# Catppuccin Theme for syntax highliting
+#catppuccin/zsh-syntax-highlighting path:themes/catppuccin_macchiato-zsh-syntax-highlighting.zsh
+
 ### Final Plugins
 #
 # Remember plugin order matters! Put plugins that need run last at the bottom of your
