@@ -4,6 +4,7 @@
 #
 
 # Environment Variables
+export EDITOR="nvim"
 export ZSH="$HOME/.oh-my-zsh"
 export XDG_CONFIG_HOME=$HOME/.config
 export XCURSOR_PATH=${XCURSOR_PATH}:~/.local/share/icons
@@ -14,7 +15,7 @@ source $ZDOTDIR/pluginload.zsh
 
 # User Aliases
 #alias dup='sudo zypper refresh && sudo zypper dup && flatpak update && nix-channel --update && nix-env -u --always && brew update && brew upgrade'
-alias dup='sudo zypperoni refresh && sudo zypperoni --no-confirm dup && flatpak update && nix-channel --update && nix-env -u --a>'
+alias dup='topgrade -y'
 alias hyprlnano='nano ~/.config/hypr/hyprland.conf'
 alias vi='nvim'
 alias vim='nvim'
