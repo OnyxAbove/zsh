@@ -9,6 +9,7 @@ export ZSH="$HOME/.oh-my-zsh"
 export XDG_CONFIG_HOME=$HOME/.config
 export XCURSOR_PATH=${XCURSOR_PATH}:~/.local/share/icons
 export ZDOTDIR=~/.config/zsh
+export TERMINAL="kitty"
 ZSH_THEME="xiong-chiamiov-plus"
 
 source $ZDOTDIR/pluginload.zsh
