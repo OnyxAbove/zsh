@@ -15,13 +15,15 @@ fi
 # Editors
 #
 
-export EDITOR="${EDITOR:-vim}"
-export VISUAL="${VISUAL:-vim}"
+export EDITOR="${EDITOR:-nvim}"
+export VISUAL="${VISUAL:-nvim}"
 export PAGER="${PAGER:-less}"
 
 #
 # Paths
 #
+export PATH="$PATH:$HOME/.local/bin"
+
 
 # Ensure path arrays do not contain duplicates.
 typeset -gU path fpath
@@ -31,5 +33,5 @@ path=(
   $HOME/{,s}bin(N)
   /opt/{homebrew,local}/{,s}bin(N)
   /usr/local/{,s}bin(N)
-  $path
+  $PATH
 )
