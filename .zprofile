@@ -22,7 +22,7 @@ export PAGER="${PAGER:-less}"
 #
 # Paths
 #
-export PATH="$PATH:$HOME/.local/bin"
+export PATH="$PATH:$HOME/.local/bin:$HOME/.cargo/bin"
 
 
 # Ensure path arrays do not contain duplicates.
