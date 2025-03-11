@@ -22,7 +22,6 @@ export PAGER="${PAGER:-less}"
 #
 # Paths
 #
-export PATH="$PATH:$HOME/.local/bin:$HOME/.cargo/bin"
 
 
 # Ensure path arrays do not contain duplicates.
@@ -35,3 +34,6 @@ path=(
   /usr/local/{,s}bin(N)
   $PATH
 )
+
+export PATH="$PATH:$HOME/.local/bin:$HOME/.cargo/bin:$HOME/.spicetify"
+

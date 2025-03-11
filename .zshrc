@@ -37,3 +37,5 @@ eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 eval "$(zoxide init zsh)"
 
 export PATH=$PATH:/home/roshanstudley/.spicetify
+
+export PATH=$PATH:/home/rstudley/.spicetify
