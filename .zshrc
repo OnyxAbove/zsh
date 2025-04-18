@@ -25,7 +25,6 @@ source $ZDOTDIR/pluginload.zsh
 # User Aliases
 #alias dup='sudo zypper refresh && sudo zypper dup && flatpak update && nix-channel --update && nix-env -u --always && brew update && brew upgrade'
 alias dup='topgrade -y'
-alias hyprlnano='nano ~/.config/hypr/hyprland.conf'
 alias vi='nvim'
 alias vim='nvim'
 alias cd='z'
@@ -33,7 +32,7 @@ alias ls='eza -a --icons'
 alias ll='eza -al --icons'
 alias lt='eza -a --tree --level=1 --icons'
 alias dnf='dnf5'
-alias reflector-default='sudo reflector -c US -p https -l 10 -f 5 --save /etc/pacman.d/mirrorlist'
+alias reflector-default='sudo reflector -country US --protocol https --latest 20 --sort rate --save /etc/pacman.d/mirrorlist'
 
 # History
 HISTFILE=~/.config/zsh/.zsh_history
@@ -44,8 +43,6 @@ setopt appendhistory
 # Autoruns
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 eval "$(zoxide init zsh)"
-
-export PATH=$PATH:/home/roshanstudley/.spicetify
 
 export PATH=$PATH:/home/rstudley/.spicetify
 
