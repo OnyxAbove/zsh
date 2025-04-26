@@ -26,7 +26,6 @@ source $ZDOTDIR/pluginload.zsh
 #alias dup='sudo zypper refresh && sudo zypper dup && flatpak update && nix-channel --update && nix-env -u --always && brew update && brew upgrade'
 alias dup='topgrade -y'
 alias vi='nvim'
-alias vim='nvim'
 alias cd='z'
 alias ls='eza -a --icons'
 alias ll='eza -al --icons'
