@@ -31,7 +31,7 @@ alias ls='eza -a --icons'
 alias ll='eza -al --icons'
 alias lt='eza -a --tree --level=1 --icons'
 alias dnf='dnf5'
-alias reflector-default='sudo reflector -country US --protocol https --latest 20 --sort rate --save /etc/pacman.d/mirrorlist'
+alias reflector-default='sudo reflector -c US --protocol https --latest 20 --sort rate --save /etc/pacman.d/mirrorlist'
 
 # History
 HISTFILE=~/.config/zsh/.zsh_history
