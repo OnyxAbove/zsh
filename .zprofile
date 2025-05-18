@@ -28,6 +28,9 @@ export PAGER="${PAGER:-less}"
 typeset -gU path fpath
 
 # Set the list of directories that zsh searches for commands.
+
+export PATH="$PATH:$HOME/.local/bin:$HOME/.cargo/bin:$HOME/.spicetify"
+
 path=(
   $HOME/{,s}bin(N)
   /opt/{homebrew,local}/{,s}bin(N)
@@ -35,5 +38,4 @@ path=(
   $PATH
 )
 
-export PATH="$PATH:$HOME/.local/bin:$HOME/.cargo/bin:$HOME/.spicetify"
 

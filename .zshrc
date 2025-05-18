@@ -43,7 +43,5 @@ setopt appendhistory
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 eval "$(zoxide init zsh)"
 
-export PATH=$PATH:/home/rstudley/.spicetify
-
 # For Starship Prompt
 # eval "$(starship init zsh)"
