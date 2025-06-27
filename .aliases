@@ -9,12 +9,11 @@ alias l=ls
 alias g=git
 
 # mask built-ins with better defaults
-alias vi=vim
-
-# more ways to ls
-alias ll='ls -lh'
-alias la='ls -lAh'
-alias ldot='ls -ld .*'
+alias ls='eza -a --icons'
+alias ll='eza -al --icons'
+alias lt='eza -a --tree --level=1 --icons'
+alias vi='nvim'
+alias cd='z'
 
 # fix common typos
 alias quit='exit'
@@ -33,6 +32,9 @@ alias urldecode='python3 -c "import sys, urllib.parse as ul; \
     print(ul.unquote_plus(sys.argv[1]))"'
 alias urlencode='python3 -c "import sys, urllib.parse as ul; \
     print (ul.quote_plus(sys.argv[1]))"'
+
+# mirrors
+alias reflector-default='sudo reflector -c US --protocol https --latest 20 --sort rate --save /etc/pacman.d/mirrorlist'
 
 # misc
 alias please=sudo

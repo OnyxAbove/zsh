@@ -22,17 +22,6 @@ export FZF_DEFAULT_OPTS=" \
 
 source $ZDOTDIR/pluginload.zsh
 
-# User Aliases
-#alias dup='sudo zypper refresh && sudo zypper dup && flatpak update && nix-channel --update && nix-env -u --always && brew update && brew upgrade'
-alias dup='topgrade -y'
-alias vi='nvim'
-alias cd='z'
-alias ls='eza -a --icons'
-alias ll='eza -al --icons'
-alias lt='eza -a --tree --level=1 --icons'
-alias dnf='dnf5'
-alias reflector-default='sudo reflector -c US --protocol https --latest 20 --sort rate --save /etc/pacman.d/mirrorlist'
-
 # History
 HISTFILE=~/.config/zsh/.zsh_history
 HISTSIZE=10000
