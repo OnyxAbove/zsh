@@ -45,3 +45,5 @@ eval "$(zoxide init zsh)"
 
 # For Starship Prompt
 # eval "$(starship init zsh)"
+
+export PATH=$PATH:/home/rstudley/.spicetify
