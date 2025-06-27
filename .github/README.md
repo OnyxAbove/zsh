@@ -1,6 +1,6 @@
 # zdotdir
 
-My personal zsh config based on https://github.com/getandidote/zdotdir.
+My personal zsh config based on https://github.com/getantidote/zdotdir.
 
 
 ## Installation
