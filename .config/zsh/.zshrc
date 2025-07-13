@@ -30,7 +30,6 @@ setopt appendhistory
 
 # Autoruns
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-eval "$(zoxide init zsh)"
 
 # For Starship Prompt
 # eval "$(starship init zsh)"

@@ -13,7 +13,6 @@ alias ls='eza -a --icons'
 alias ll='eza -al --icons'
 alias lt='eza -a --tree --level=1 --icons'
 alias vi='nvim'
-alias cd='z'
 
 # fix common typos
 alias quit='exit'
