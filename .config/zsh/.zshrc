@@ -17,7 +17,9 @@ export FZF_DEFAULT_OPTS=" \
 --color=selected-bg:#494d64 \
 --color=border:#363a4f,label:#cad3f5"
 
-source $ZDOTDIR/pluginload.zsh
+source $ZDOTDIR/.antidote/antidote.zsh
+
+antidote load
 
 # History
 HISTFILE=~/.config/zsh/.zsh_history
