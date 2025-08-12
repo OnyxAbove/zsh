@@ -26,6 +26,8 @@ HISTFILE=~/.config/zsh/.zsh_history
 HISTSIZE=10000
 SAVEHIST=10000
 setopt appendhistory
+bindkey '^[OA' history-beginning-search-backward
+bindkey '^[OB' history-beginning-search-forward
 
 # Autoruns
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
