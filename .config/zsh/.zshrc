@@ -9,7 +9,6 @@ source $ZDOTDIR/.plugins
 
 ZFUNCDIR=${ZDOTDIR:-$HOME}/.zfunctions
 fpath=($ZFUNCDIR $fpath)
-autoload -Uz $ZFUNCDIR/*(.:t)
 
 # History
 HISTFILE=~/.config/zsh/.zsh_history
