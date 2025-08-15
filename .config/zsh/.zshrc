@@ -3,21 +3,8 @@
 # .zshrc - Zsh file loaded on interactive shell sessions.
 #
 
-# Environment Variables
-export EDITOR="nvim"
-export ZSH="$HOME/.oh-my-zsh"
-export TERMINAL="kitty"
-HISTORY_SUBSTRING_SEARCH_FUZZY=1
-ZSH_THEME="xiong-chiamiov-plus"
-
-# fzf Catppuccin
-export FZF_DEFAULT_OPTS=" \
---color=bg+:#363a4f,bg:#24273a,spinner:#f4dbd6,hl:#ed8796 \
---color=fg:#cad3f5,header:#ed8796,info:#b7bdf8,pointer:#f4dbd6 \
---color=marker:#b7bdf8,fg+:#cad3f5,prompt:#b7bdf8,hl+:#ed8796 \
---color=selected-bg:#494d64 \
---color=border:#363a4f,label:#cad3f5"
-
+source $ZDOTDIR/.aliases
+source $ZDOTDIR/.environment
 source $ZDOTDIR/.antidote/antidote.zsh
 
 antidote load
@@ -27,15 +14,16 @@ HISTFILE=~/.config/zsh/.zsh_history
 HISTSIZE=10000
 SAVEHIST=10000
 setopt appendhistory
+setopt HIST_IGNORE_ALL_DUPS
 bindkey '^[OA' history-substring-search-up
 bindkey '^[OB' history-substring-search-down
+
+bindkey '^H' kill-whole-line
 
 # Autoruns
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
 # For Starship Prompt
 # eval "$(starship init zsh)"
-
-export PATH=$PATH:/home/rstudley/.spicetify
 
 source <(fzf --zsh)
