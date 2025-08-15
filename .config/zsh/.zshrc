@@ -5,9 +5,11 @@
 
 source $ZDOTDIR/.aliases
 source $ZDOTDIR/.environment
-source $ZDOTDIR/.antidote/antidote.zsh
+source $ZDOTDIR/.plugins
 
-antidote load
+ZFUNCDIR=${ZDOTDIR:-$HOME}/.zfunctions
+fpath=($ZFUNCDIR $fpath)
+autoload -Uz $ZFUNCDIR/*(.:t)
 
 # History
 HISTFILE=~/.config/zsh/.zsh_history
