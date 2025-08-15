@@ -36,6 +36,8 @@
 # We combine the `path:` and `kind:fpath` annotations here:
 zsh-users/zsh-completions path:src kind:fpath
 
+zsh-users/zsh-history-substring-search
+
 # This is the recommended plugin for handling compinit and setting completion zstyles.
 # It's designed to handle all the complexity of the Zsh completion system so the user
 # doesn't have to.

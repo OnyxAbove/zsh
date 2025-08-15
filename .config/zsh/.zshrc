@@ -7,6 +7,7 @@
 export EDITOR="nvim"
 export ZSH="$HOME/.oh-my-zsh"
 export TERMINAL="kitty"
+HISTORY_SUBSTRING_SEARCH_FUZZY=1
 ZSH_THEME="xiong-chiamiov-plus"
 
 # fzf Catppuccin
@@ -26,8 +27,8 @@ HISTFILE=~/.config/zsh/.zsh_history
 HISTSIZE=10000
 SAVEHIST=10000
 setopt appendhistory
-bindkey '^[OA' history-beginning-search-backward
-bindkey '^[OB' history-beginning-search-forward
+bindkey '^[OA' history-substring-search-up
+bindkey '^[OB' history-substring-search-down
 
 # Autoruns
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
