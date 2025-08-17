@@ -35,4 +35,3 @@ typeset -gU path fpath
 #  /usr/local/{,s}bin(N)
 #  $PATH
 #)
-)
