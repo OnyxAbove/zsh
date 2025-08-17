@@ -3,9 +3,14 @@
 # .zshrc - Zsh file loaded on interactive shell sessions.
 #
 
-source $ZDOTDIR/.aliases
-source $ZDOTDIR/.environment
-source $ZDOTDIR/.plugins
+# Source anything in .zshrc.d.
+for _rc in ${ZDOTDIR:-$HOME}/.zshrc.d/*.zsh; do
+  # Ignore tilde files.
+  if [[ $_rc:t != '~'* ]]; then
+    source "$_rc"
+  fi
+done
+unset _rc
 
 ZFUNCDIR=${ZDOTDIR:-$HOME}/.zfunctions
 fpath=($ZFUNCDIR $fpath)
