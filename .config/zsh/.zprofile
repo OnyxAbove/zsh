@@ -29,8 +29,6 @@ typeset -gU path fpath
 
 # Set the list of directories that zsh searches for commands.
 
-export PATH="$HOME/.local/bin:$HOME/.cargo/bin:$HOME/.spicetify:$PATH"
-
 path=(
   $HOME/{,s}bin(N)
   /opt/{homebrew,local}/{,s}bin(N)
